@@ -18,3 +18,7 @@ sudo dpkg -i reverse-tunneld.deb
 # to remove
 sudo apt remove reverse-tunneld
 ```
+
+**Config files?**
+- Find it all under `/etc/reverse-tunneld/tunneld-conf-custom.conf` & `/etc/reverse-tunneld/tunneld-conf-shell.conf`.
+- Yeah you gotit it's just a ssh [config file](https://www.man7.org/linux/man-pages/man5/ssh_config.5.html). Feel free to follow the same &/ hack.

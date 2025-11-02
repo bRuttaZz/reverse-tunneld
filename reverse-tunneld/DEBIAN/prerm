@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+systemctl stop tunneld-custom.service || true
+systemctl stop tunneld-shell.service || true
+
+systemctl disable tunneld-custom.service || true
+systemctl disable tunneld-shell.service || true
+
+systemctl daemon-reload || true

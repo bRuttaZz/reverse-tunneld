@@ -1,0 +1,14 @@
+[Unit]
+Description=Reverse SSH Tunnel for SSH custom ports
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Environment="CONF_FILE=/etc/reverse-tunneld/tunneld-conf-custom.conf"
+ExecStart=/etc/reverse-tunneld/tunneld.sh
+RestartSec=10
+Restart=on-failure
+RestartPreventExitStatus=101 102 103
+
+[Install]
+WantedBy=multi-user.target

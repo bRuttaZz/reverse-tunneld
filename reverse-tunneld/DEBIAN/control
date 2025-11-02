@@ -1,0 +1,11 @@
+Package: reverse-tunneld
+Version: 0.1.0
+Section: net
+Priority: optional
+Architecture: all
+Maintainer: brutazz <agrajpdas@gmail.com>
+Homepage: https://github.com/bruttazz/reverse-tunneld
+Depends: openssh-client
+Description: Reverse SSH tunnel automation script
+    Nothing special an automation script for reverse ssh tunnel
+    for routing remote-TCP connections to local machine

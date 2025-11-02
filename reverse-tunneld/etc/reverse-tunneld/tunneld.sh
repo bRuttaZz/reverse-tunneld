@@ -24,7 +24,13 @@ then
     exit 103
 fi
 
-cmd="/usr/bin/ssh -o ExitOnForwardFailure=yes -o StrictHostKeyChecking=accept-new  -N -v -F $CONF_FILE remote"
+cmd="/usr/bin/ssh \
+    -o ExitOnForwardFailure=yes \
+    -o StrictHostKeyChecking=accept-new \
+    -o ServerAliveInterval=30 \
+    -o ServerAliveCountMax=2 \
+    -N -v -F $CONF_FILE remote";
+
 echo "cmd: '$cmd'\n"
 
 $cmd

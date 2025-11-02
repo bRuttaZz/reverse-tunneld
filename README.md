@@ -1,4 +1,6 @@
 # Reverse Tunnel Daemon
+[![deb-package-build](https://github.com/bRuttaZz/reverse-tunneld/actions/workflows/deb-package.yaml/badge.svg)](https://github.com/bRuttaZz/reverse-tunneld/actions/workflows/deb-package.yaml)
+
 
 **Nothing special a dead-simple automation script for reverse ssh tunnels**
 
@@ -7,4 +9,9 @@
 - Yes you're completely free to use autossh :)
 
 **Installation?**
-- The `.deb` build can be found on the release page
+- The `.deb` build can be found on the [release page](https://github.com/bRuttaZz/reverse-tunneld/releases/latest)
+- easy script?
+```sh
+curl -O reverse-tunneld.deb https://github.com/bRuttaZz/reverse-tunneld/releases/latest/download/reverse-tunneld.deb
+sudo dpkg -i reverse-tunneld.deb
+```
